@@ -35,9 +35,9 @@ body {
 
 .marker{
   border: 1px solid black;
-  background: blue;
+  background: yellow;
   opacity:0.5 ;
-  width:24px;
-  height:24px;
+  width:32px;
+  height:32px;
   border-radius:50px;
 }
