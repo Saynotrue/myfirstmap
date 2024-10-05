@@ -1,0 +1,43 @@
+body {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+
+#navbar {
+  height:50px;
+  width:100%;
+  background:#262626;
+  color: white;
+  font-weight: bolder;
+  font-size: 25px;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+
+#infobox {
+  position:absolute;
+  top:100px;
+  z-index:1001;
+  background: white;
+  left:20px;
+  padding:15px;
+  border:1px solid rgba(0,0,0,0.2);
+  border-radius:4px;
+  text-align:center;
+}
+
+#infoTitle {
+  font-size:15px;
+  font-weight:bolder;
+}
+
+.marker{
+  border: 1px solid black;
+  background: blue;
+  opacity:0.5 ;
+  width:24px;
+  height:24px;
+  border-radius:50px;
+}
