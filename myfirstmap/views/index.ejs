@@ -15,22 +15,26 @@
   <div id="infoContent">2024.10.05</div>
 </div>
 <div id="map" style="width:100%;height:100vh;"></div>
-
+<script type="text/javascript" src="/data/data.js"></script>
 <script>
 var mapOptions = {
-    center: new naver.maps.LatLng(37.374027, 126.732414),
-    zoom: 10
+    center: new naver.maps.LatLng(37.373951, 126.732365),
+    zoom: 15
 };
 
 var map = new naver.maps.Map('map', mapOptions);
 
-marker=new naver.maps.Marker({
-  map: map,
-  position: new naver.maps.LatLng(37.397577, 126.943653),
-  icon:{
-    content: "<div class='marker'></div>"
-  }
-})
+for (var i in data) {
+  var target = data[i];
+  var latlng = new naver.maps.LatLng(target.lat, target.lng);
+  marker = new naver.maps.Marker({
+    map: map,
+    position:latlng,
+    icon: {
+      content:"<div class='marker'></div>",
+    },
+  });
+}
 </script>
 </body>
 </html>
